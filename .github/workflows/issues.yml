@@ -1,8 +1,8 @@
 name: Handle issues
 on: issues
 jobs:
-  info:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Output event detalis
-      run: echo "${{ toJSON(github.event) }}"
+  output-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output event detalis
+        run: echo "${{ toJSON(github.event) }}"
